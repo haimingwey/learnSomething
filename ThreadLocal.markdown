@@ -1,6 +1,5 @@
 # ThreadLocal
 ThreadLocal instances are typically private static fields in classes that wish to associate state with a  thread(e.g.a user ID or Transaction ID).
-ThreadLocal实例一般作为类的私有静态成员，用来关联一个线程。
 
 ## ThreadLocal类属性和方法
 
@@ -22,3 +21,9 @@ ThreadLocal实例一般作为类的私有静态成员，用来关联一个线程
 	...
 	}
 	
+### 方法
+
+	private static int nextHashCode() {
+        	return nextHashCode.getAndAdd(HASH_INCREMENT);
+    	}
+    	
