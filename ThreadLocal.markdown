@@ -24,6 +24,9 @@ ThreadLocal instances are typically private static fields in classes that wish t
 ### 方法
 
 	private static int nextHashCode() {
-        	return nextHashCode.getAndAdd(HASH_INCREMENT);
+            return nextHashCode.getAndAdd(HASH_INCREMENT);
     	}
+
+test 
+123
     	
