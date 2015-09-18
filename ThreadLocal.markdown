@@ -35,10 +35,7 @@ ThreadLocal instances are typically private static fields in classes that wish t
 		return nextHashCode.getAndAdd(HASH_INCREMENT);
     }
 
-	protected T initialValue() {
-        return null;
-    }
-	
+### ThreadLocalMap有一个Entry数组，Entry保存键值对。
 	public T get() {
         Thread t = Thread.currentThread();
         ThreadLocalMap map = getMap(t);
@@ -59,6 +56,10 @@ ThreadLocal instances are typically private static fields in classes that wish t
         else
             createMap(t, value);
         return value;
+    }
+	
+	protected T initialValue() {
+        return null;
     }
 	
 	public void set(T value) {
