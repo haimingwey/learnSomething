@@ -25,9 +25,13 @@ ThreadLocal instances are typically private static fields in classes that wish t
 	private final int threadLocalHashCode = nextHashCode();
 	
 ### AtomicInteger: An value that may be updated atomically.
+
 AtomicInteger类有什么功能？
+
 	基本上就是简单的赋值与++、--操作
+
 AtomicInteger类是怎么实现的？
+
 	使用unsafe类控制
 
 	private static AtomicInteger nextHashCode = new AtomicInteger();
