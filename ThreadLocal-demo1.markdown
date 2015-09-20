@@ -1,0 +1,15 @@
+每一个线程都挂载了一个ThreadLocalMap。ThreadLocal类中get方法没有key传入，原因就在于这个key就是当前你使用的这个ThreadLocal它自己。ThreadLocal的对象生命周期可以伴随整个线程的生命周期。
+
+	public class User {
+
+	    private static final ThreadLocal<Object> enclosure = new ThreadLocal<Object>();
+
+	    public void set(Object object) {
+	        enclosure.set(object);
+	    }
+
+	    public Object get() {
+	    	return enclosure.get();
+	    }
+	}
+
