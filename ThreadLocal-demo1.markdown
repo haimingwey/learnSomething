@@ -13,3 +13,36 @@
 	    }
 	}
 
+
+	public class ThreadLocalUsage extends Thread{
+	
+		public User user= new User();
+	
+		@Override
+		public void run() {
+			this.user.set("var1");
+	
+			while (true) {
+				try {
+					sleep(1000);
+				} catch (InterruptedException e) {
+	
+				}
+				System.out.println(this.user.get());
+			}
+		}
+	
+		public static void main(String[] args) {
+			ThreadLocalUsage thread = new ThreadLocalUsage();
+			thread.start();
+	
+			try {
+				sleep(4000);
+			} catch (InterruptedException e) {
+	
+			}
+			thread.user.set("var2");
+			System.out.println(thread.user.get());
+		}
+	}
+
