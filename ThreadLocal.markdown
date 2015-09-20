@@ -34,6 +34,7 @@ AtomicInteger类是怎么实现的？
 
 	使用unsafe类控制
 
+
 	private static AtomicInteger nextHashCode = new AtomicInteger();
 
 ### Why is 0x61c88647?
