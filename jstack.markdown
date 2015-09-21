@@ -1,9 +1,10 @@
 # jstack - Stack Trace
 jstack主要用来查看某个Java进程内的线程堆栈信息
-用法：
-jstack [ option ] pid
-jstack [ option ] executable core
-jstack [ option ] [server-id@]remote-hostname-or-IP
+
+	用法：
+	jstack [ option ] pid
+	jstack [ option ] executable core
+	jstack [ option ] [server-id@]remote-hostname-or-IP
 
 1.用jps 找出线程id
 
