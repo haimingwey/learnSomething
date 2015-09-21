@@ -34,7 +34,7 @@
 
 -TIMED_WAITING: The thread is waiting by using a sleep, wait, join or park method. (The difference from WAITING is that the maximum waiting time is specified by the method parameter, and WAITING can be relieved by time as well as external changes.) 
 
-##　线程类型
+## 线程类型
 
 	守护线程
 	非守护线程
