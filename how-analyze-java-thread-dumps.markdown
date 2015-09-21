@@ -8,11 +8,10 @@
 		--Deadlock
 
 我们可以用java自带的一些工具来分析线程锁。java自带的都有哪些工具呢？我们可以在jdk的bin目录下找到。
-[root@localhost bin]# ls
-appletviewer  idlj       javac           javap         jconsole  jinfo    `jps`         jstat      native2ascii  rmic         serialver   wsgen
-apt           jar        javadoc         java-rmi.cgi  jcontrol  jmap     jrunscript  jstatd     orbd          rmid         servertool  wsimport
-ControlPanel  jarsigner  javafxpackager  javaws        jdb       jmc      jsadebugd   jvisualvm  pack200       rmiregistry  tnameserv   xjc
-extcheck      java       javah           jcmd          jhat      jmc.ini  `jstack`      keytool    policytool    schemagen    unpack200
+[root@localhost bin]# pwd
+/usr/java/jdk1.7.0_79/bin
+[root@localhost bin]# ls -lrt jvisualvm 
+-rwxr-xr-x. 1 uucp 143 5358 Jan  9  2015 jvisualvm
 		
 ## 线程状态
 
@@ -26,9 +25,13 @@ extcheck      java       javah           jcmd          jhat      jmc.ini  `jstac
 	    }
 	    
 -NEW: The thread is created but has not been processed yet.
+
 -RUNNABLE: The thread is occupying the CPU and processing a task. (It may be in WAITING status due to the OS's resource distribution.)
+
 -BLOCKED: The thread is waiting for a different thread to release its lock in order to get the monitor lock.
+
 -WAITING: The thread is waiting by using a wait, join or park method.
+
 -TIMED_WAITING: The thread is waiting by using a sleep, wait, join or park method. (The difference from WAITING is that the maximum waiting time is specified by the method parameter, and WAITING can be relieved by time as well as external changes.) 
 
 ##　线程类型
