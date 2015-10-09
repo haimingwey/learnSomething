@@ -30,7 +30,7 @@
 4，p表示path路径。
 5，0表示批处理文件的第一个参数。第一个参数默认为命令行的文件名。
 
-	C:\Users\Administrator\Desktop>echo C:\Users\Administrator\Desktop\t.bat
-	C:\Users\Administrator\Desktop\t.bat
+	C:\Users\Administrator\Desktop>echo C:\Users\Administrator\Desktop\test.bat
+	C:\Users\Administrator\Desktop\test.bat
 
 更加详细的解释可以看：http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/percent.mspx?mfr=true
