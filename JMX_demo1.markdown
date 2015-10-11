@@ -65,4 +65,10 @@
 	- 位置2点击应用，等于调用bean中的setName()方法
 	- 位置3输入`sayHello`方法的参数
 	- 位置4点击方法，将会使用输入的参数调用此方法
+		- ![demo1-sayHello-Successful](./Figure/jmx/demo1-sayHello-Successful.jpg)
 	- 位置5点击调用`printHello`方法
+
+HelloAgent主程序输出如下：
+	start...
+	Hello Jone
+	Hello World haimingwey
