@@ -57,6 +57,6 @@
 
 ![在浏览器输入http://localhost:8082/](./Figure/jmx/demo1-Agent-View.jpg)
 
+- 点击链接`name=haimingwey`
 
-
-
+![MBean view Hello](./Figure/jmx/demo1-MBean-View-Hello.jpg)
