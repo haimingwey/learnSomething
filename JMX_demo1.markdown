@@ -52,9 +52,11 @@
 	}
 	
 
-1 运行代码HelloAgent.main()
-2 在浏览器输入http://localhost:8082/
-(./Figure/jmx/demo1-Agent-View.jpg)
+- 运行代码HelloAgent.main()
+- 在浏览器输入http://localhost:8082/
+
+![在浏览器输入http://localhost:8082/](./Figure/jmx/demo1-Agent-View.jpg)
+
 
 
 
