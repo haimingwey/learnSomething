@@ -4,3 +4,7 @@
 	git push origin master
 ### 提交代码并添加注释
 	git commit -m "your comments"
+### 更新本地仓库至最新改动
+	git pull	
+	
+	
