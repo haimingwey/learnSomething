@@ -55,8 +55,14 @@
 - 运行代码HelloAgent.main()
 - 在浏览器输入http://localhost:8082/
 
-![在浏览器输入http://localhost:8082/](./Figure/jmx/demo1-Agent-View.jpg)
+	![在浏览器输入http://localhost:8082/](./Figure/jmx/demo1-Agent-View.jpg)
 
 - 点击链接`name=haimingwey`
 
-![MBean view Hello](./Figure/jmx/demo1-MBean-View-Hello.jpg)
+	![MBean view Hello](./Figure/jmx/demo1-MBean-View-Hello.jpg)
+
+	- 位置1输入`name`的属性值
+	- 位置2点击应用，等于调用bean中的setName()方法
+	- 位置3输入`sayHello`方法的参数
+	- 位置4点击方法，将会使用输入的参数调用此方法
+	- 位置5点击调用`printHello`方法
